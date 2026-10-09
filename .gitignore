@@ -1,0 +1,35 @@
+# =============================================================================
+# Archivo de exclusión para el control de versiones Git.
+#
+# Propósito:
+#   Impedir que archivos sensibles, entornos virtuales y artefactos generados
+#   sean incorporados al repositorio, resguardando la seguridad del proyecto
+#   y la reproducibilidad del entorno.
+# =============================================================================
+
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Cachés de Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Archivos sensibles (¡NO versionar!)
+config.yaml
+.env
+*.secret
+credenciales.*
+
+# Reportes y salidas generadas
+output/
+reportes/
+*.log
+
+# Configuración del editor
+.vscode/
+.idea/
